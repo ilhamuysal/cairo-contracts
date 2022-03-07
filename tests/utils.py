@@ -8,7 +8,7 @@ from starkware.starkware_utils.error_handling import StarkException
 from starkware.starknet.testing.starknet import StarknetContract
 from starkware.starknet.business_logic.transaction_execution_objects import Event
 
-
+MAX_CHARS_FELT = 31
 MAX_UINT256 = (2**128 - 1, 2**128 - 1)
 ZERO_ADDRESS = 0
 TRUE = 1
@@ -23,8 +23,23 @@ def str_to_felt(text):
 
 
 def felt_to_str(felt):
-    b_felt = felt.to_bytes(31, "big")
-    return b_felt.decode()
+    length = (felt.bit_length() + 7) // 8
+    return felt.to_bytes(length, byteorder="big").decode("utf-8")
+
+
+def str_to_felt_array(text):
+    chunks = []
+    for i in range(0, len(text), MAX_CHARS_FELT):
+        str_chunk = text[i:i+MAX_CHARS_FELT]
+        chunks.append(str_to_felt(str_chunk))
+    return chunks
+
+
+def felt_array_to_str(felt_array):
+    res = ""
+    for felt in felt_array:
+        res += felt_to_str(felt)
+    return res
 
 
 def assert_event_emitted(tx_exec_info, from_address, name, data):
