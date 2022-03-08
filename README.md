@@ -1,7 +1,7 @@
 # ⚠️ Note from Oasis Team ⚠️
-This repo is a fork of the OpenZeppelin contracts. The reason for the fork was to have long string support for `tokenURI`. This is required to show images on Oasis.
+This repo is a fork of the OpenZeppelin contracts. The reason for the fork was to have long string support for `tokenURI` on ERC721 contracts. This is required to show images on Oasis.
 
-When OpenZeppelin support long strings TokenURIs, we will defer the ERC721 standard to OpenZeppelin and follow their standards.
+When OpenZeppelin support long strings TokenURIs for ERC721, we will defer the standard to OpenZeppelin and follow their standards.
 
 
 # OpenZeppelin Cairo Contracts
