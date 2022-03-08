@@ -1,6 +1,6 @@
 # Oasis ERC721 Cairo Contracts
 
-Deploy `/cairo-contracts/openzeppelin/token/ERC721_Mintable_Burnable_LongTokenURI.cairo` to StarkNet to have the NFTs available for trading on [Oasis](https://playoasis.xyz/). Please see the [Cairo documentation](https://www.cairo-lang.org/docs/) for more information on deploying contracts.
+Deploy `/cairo-contracts/openzeppelin/token/erc721/ERC721_Mintable_Burnable_LongTokenURI.cairo` to StarkNet to have the NFTs available for trading on [Oasis](https://playoasis.xyz/). Please see the [Cairo documentation](https://www.cairo-lang.org/docs/) for more information on deploying contracts.
 
 ## Need help? Contact us:
 
