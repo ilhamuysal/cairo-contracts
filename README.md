@@ -1,7 +1,27 @@
-# ⚠️ Note from Oasis Team ⚠️
+## ⚠️ Note from Oasis Team ⚠️
 This repo is a fork of the OpenZeppelin contracts. The reason for the fork was to have long string support for `tokenURI` on ERC721 contracts. This is required to show images on Oasis.
 
 When OpenZeppelin support long strings TokenURIs for ERC721, we will defer the standard to OpenZeppelin and follow their standards.
+
+# Deploy `TokenURI` Compaitable ERC721 Cairo Contracts on `oasis`
+
+Deploy `/cairo-contracts/openzeppelin/token/erc721/ERC721_Mintable_Burnable_LongTokenURI.cairo` to StarkNet to have the NFTs available for trading on [Oasis](https://playoasis.xyz/). Please see the [Cairo documentation](https://www.cairo-lang.org/docs/) for more information on deploying contracts.
+
+## Need help? Contact us:
+
+- [Discord](https://discord.gg/aR2U7KtbgD)
+- [Twitter](https://twitter.com/playoasisXYZ)
+
+---
+
+- Discord: 0xmonkeyy#0981
+- Twitter: 0xmonkeyy
+
+---
+
+- Discord: 0xSean#1534
+- Twitter: 0xs34n
+
 
 
 # OpenZeppelin Cairo Contracts
